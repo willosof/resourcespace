@@ -1,0 +1,438 @@
+/*Create Base font for relative sizing*/
+
+body {width:100%;margin:0;padding:0;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:11px;text-align: center;}
+td, textarea {font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:11px;}
+
+/*Basic tag setup for creating standards across platforms and browsers*/
+p, h1, h2, h3, h4, h5 {padding:0; margin:0; vertical-align:top;}
+p {padding:0 0 1.75em; margin:0; font-size:1em; line-height:1.25em;}
+p.tight {padding:0 0 0.75em;}
+h1 {padding:0.1em 0 0.5em;margin:0;font: normal 1.5em Arial, Helvetica, sans-serif;}
+h2 {padding:0.1em 0;margin:0;font: normal 1.5em Arial, Helvetica, sans-serif;}
+h3 {font-size:1.25em; padding:0.5em 0 0.5em 0; margin:0;font-weight:normal;}
+h4 {font-size:1em; padding:0.5em 0 0.5em; margin:0;font-weight:normal;}
+h5 {font-size:0.75em; padding:0.5em 0 0.5em 0; margin:0;font-weight:normal;}
+img {border:0}
+em {font-style: italic;}
+strong {font-weight: bold;}
+ol, ul {margin:0 0 0 2.5em;padding:0 0 1em;}
+ul ul, ul ol, ol ul, ol ol {margin:0 0 0 2.5em;padding:1em 0 0em;}
+li {padding:0em 0 1em;margin:0;}
+blockquote {padding:0 0 2em; margin:0em 2.5em;}
+blockquote blockquote {padding:1em 0 2em; margin:0em 2.5em;}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
+input[readonly] {border: none; background: none;}
+input,textarea {box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+option {font-size:11px;}
+
+/*General tags*/
+.clearer {clear:both;}
+.clearerleft {clear:left;}
+.Hidden {visibility: hidden;height: 0;width: 0;overflow: hidden;}
+.nowrap {white-space:nowrap;}
+
+/*General layout*/
+#Header {margin:20px 25px;padding:0;text-align:left;}
+#TextHeader{font-size:25px;float:left;}
+#TextHeader a {text-decoration:none;}
+#TextDesc{font-size:12px;float:left;display:block;clear:left;}
+#HeaderNav1 {text-align:right;height:40px;}
+#HeaderNav2 {text-align:right;margin-top: 28px;margin-bottom: 4px;}
+
+#Footer {margin:20px 25px;padding:0;text-align:left;}
+#FooterNavRight {float:right;text-align:right;margin-top: 10px;clear: right;}
+#FooterNavLeft {float:left;text-align:left;margin-top: 10px;}
+
+#CentralSpaceContainer {margin:0px 25px 20px;padding:0 174px 0 0;text-align:left;}
+#CentralSpaceContainerRestrict {margin:0px 15px 20px 25px;padding:0;text-align:left;}
+#CentralSpaceLogin {margin: 2em auto 4em;padding:0;width: 560px;text-align:left;}
+#CentralSpace {text-align:left;}
+
+.TopInpageNav {margin-top:20px;margin-bottom: 10px;margin-right: 15px;clear: left;text-align: right;padding-bottom: 5px;}
+.BottomInpageNav {clear: left;text-align: right;padding-top: 5px;margin: 5px 15px 0px 0px;}
+.BottomInpageKey {margin-right: 15px;clear: left;text-align: left;}
+.InpageNavLeftBlock {float:left;text-align:left;margin-right: 20px;margin-bottom: 10px;}
+.InpageNavRightBlock {float:right;text-align:left;margin-right: 15px;margin-bottom: 10px;}
+
+.TopInpageNav a:link, .TopInpageNav a:visited, .BottomInpageNav a:link, .BottomInpageNav a:visited , #CentralSpaceLogin a:link, #CentralSpaceLogin a:visited {text-decoration:none;}
+.TopInpageNav a:hover, .TopInpageNav a:active, .BottomInpageNav a:hover, .BottomInpageNav a:active, #CentralSpaceLogin a:hover, #CentralSpaceLogin a:active {text-decoration:underline;}
+.Selected {font-weight: bold;}
+
+
+.HorizontalNav ul {padding:0.2em 0;margin:0;list-style:none;}
+.HorizontalNav li {display:inline;padding:0 0.35em 0 0.5em;margin:0px;}
+.HorizontalNav a:link, .HorizontalNav a:visited {text-decoration:none;}
+.HorizontalNav a:hover, .HorizontalNav a:active {text-decoration:underline;}
+.HorizontalWhiteNav li:first-child {border-left:none;}
+.HorizontalNav li:first-child {border-left:none;}
+#CollectionMinRightNav li:first-child {border-left:none;}
+
+/*Collection layout*/
+#CollectionMenu{width: 166px;position: absolute;left: 25px;top: 6px;text-align:left;}
+#CollectionMenuExp{width: 216px;position: absolute;left: 25px;top: 6px;text-align:left;}
+#CollectionSpace{position: absolute;left: 199px;top: 6px;font-size: 0.95em;text-align:left;}
+#CollectionSpaceExp{position: absolute;left: 249px;top: 6px;font-size: 0.95em;text-align:left;}
+.CollectBack h2 {font-size: 1.3em;}
+#CollectionMenu ul {padding:0.2em 0;margin:0;list-style:none;}
+#CollectionMenu li {padding:0;margin:0px 8px 1px 0px;float:left;white-space:nowrap;}
+#CollectionMenuExp ul {padding:0.2em 0;margin:0;list-style:none;}
+#CollectionMenuExp li {padding:0;margin:0px 8px 1px 0px;float:left;white-space:nowrap;}
+.CollectBack a:link, .CollectBack a:visited {text-decoration:none;}
+.CollectBack a:hover, .CollectBack a:active {text-decoration:underline;}
+
+.CollectBack form {padding:0; margin:0;}
+.CollectBack .SearchWidth {width: 150px;font: 10px Tahoma, Arial, Helvetica, sans-serif;margin: 3px 0px;padding: 0px;}
+.CollectBack .SearchWidthExp {width: 200px;font: 10px Tahoma, Arial, Helvetica, sans-serif;margin: 3px 0px;padding: 0px;}
+.CollectBack .SearchItem {margin: 0 0 10px;padding: 0;}
+.CollectBack .MinSearchItem {margin: 0;padding: 0;}
+
+.CollectionPanelShell{padding:0;float: left;margin: 0px 15px 5px 0px;width: 77px;height: 110px;}
+.CollectionPanelInfo{}
+.CollectionResourceAlign {width:77px;height:85px;text-align: center;vertical-align: middle;}
+
+#CollectionMinTitle{float: left;margin: 6px 10px 0px 25px;}
+#CollectionMinDropTitle{float: left;padding:0.2em 0em;margin-top: 8px;}
+#CollectionMinDrop{float: left;margin: 6px 0px 0px;padding:0.2em 0em}
+#CollectionMinDrop form{margin:0;padding:0}
+#CollectionMinitems{float: left;margin: 8px 10px 0px;padding:0.2em 0em}
+#CollectionMinRightNav{float: right;margin: 6px 25px 0px 0px;}
+
+#CollectionMinDrop .SearchWidth {width: 150px;font: 10px Tahoma, Arial, Helvetica, sans-serif;margin:0;padding: 0;}
+#CollectionMinDrop .SearchWidthExp {width: 200px;font: 10px Tahoma, Arial, Helvetica, sans-serif;margin:0;padding: 0;}
+#CollectionMinRightNav ul {padding:0.2em 0;margin:0;list-style:none;}
+#CollectionMinRightNav li {display:inline;padding:0 0.35em 0 0.5em;margin:0px;}
+
+
+/*Right Search Box layout*/
+#SearchBox {padding:0;float: right;width: 174px;margin: 0px 25px 0px 0px;display:inline;text-align:left;}
+#SearchBoxPanel {width: 172px;}
+#ResearchBoxPanel {width: 172px;margin-top: 15px;}
+
+/*Resource Panel layout*/
+.ResourcePanelShell {padding:0;float: left;margin: 0px 15px 10px 0px;width: 164px;}
+.ResourcePanel {padding:0;margin:0;width: 162px;padding-bottom:5px;}
+.ResourcePanelPreview {height: 156px;width: 156px;margin: 3px;}
+.ResourcePanelInfo {margin-right: 5px;margin-left: 5px;margin-bottom: 4px;overflow:hidden;white-space:nowrap;padding:0;margin-top:0;}	
+.ResourcePanelCountry {margin-right: 5px;margin-left: 5px;margin-bottom: 0px;float: left;clear: left;display:inline;}	
+.ResourcePanelIcons {padding-left: 5px;display:inline;}	
+.ResourcePanelSmallIcons {padding-left: 5px;display:inline;}	
+/*.ResourcePanelIcon {margin-right: 3px;margin-left: 5px;display: block;float: right;}
+.ResourcePanelIcon img {margin-left: 2px;border-style: none;}*/
+.ResourceAlign {width:162px;height:167px;text-align: center;vertical-align: middle;}
+.ResourcePanelShell a:link, .ResourcePanelShell a:visited {text-decoration:none;}
+.ResourcePanelShell a:hover, .ResourcePanelShell a:active {text-decoration:underline;}
+
+
+.ResourcePanelShellSmall {padding:0;float: left;margin: 0px 15px 10px 0px;width: 105px;}
+.ResourcePanelSmall {padding:0;margin:0;width: 105px;padding-bottom:5px;}
+.ResourceAlignSmall {width:105px;height:90px;text-align: center;vertical-align: middle;}
+
+.ResourcePanelShellLarge {padding:0 0 10px; float: left;margin: 0px 15px 0px 0px;width: 365px;}
+.ResourcePanelLarge {padding:0;margin:0;width: 365px;padding-bottom:5px;}
+.ResourceAlignLarge {width:365px;height:365px;text-align: center;vertical-align: middle;}
+
+.IconCollect	{width: 22px;height:12px;padding: 0;display: block;float: right;margin-right: 5px;}
+.IconCollectOut	{width: 22px;height:12px;padding: 0;display: block;float: right;margin-right: 5px;}
+.IconEmail	{width:16px;height:12px;padding: 0;display: block;float: right;margin-right: 5px;}
+.IconPreview	{width:16px;height:12px;padding: 0;display: block;float: right;margin-right: 5px;}
+
+.IconStar	{width:11px;height:12px;padding: 0;display: block;float: right;}
+.IconRemove		{width:14px;height:12px;padding: 0;display: block;float: right;}
+.IconReorder	{width:16px;height:12px;padding: 0;display: block;float: right;}
+.IconComment	{width:16px;height:12px;padding: 0;display: block;float: right;}
+.ResourceSelect {display:block;float:right;}
+.IconUserRatingStar	{width:13px;height:15px;padding: 0;margin-bottom:6px;display: block;}
+.IconUserRatingSpace	{width:7px;height:10px;padding: 0;margin-bottom:6px;display: block;float: left;}
+.KeyReorder {margin: 0px 5px 10px;display: inline;padding-left: 18px;}
+.KeyComment {margin: 0px 5px 10px;display: inline;padding-left: 19px;}
+
+.KeyStar {margin: 0px 5px 10px;display: inline;padding-left: 14px;}
+.KeyEmail {margin: 0px 5px 10px;display: inline;padding-left: 19px;}
+.KeyPreview {margin: 0px 5px 10px;display: inline;padding-left: 19px;}
+.KeyCollect {margin: 0px 5px 10px;display: inline;padding-left: 25px;}
+.ASC {display: inline;padding-right: 10px;}
+.DESC {display: inline;padding-right: 10px;}
+
+/*Resource Panel layout*/
+.Listview {	margin: 25px 15px 25px 0px;}
+.Listview table{ width:100%;}
+.Listview td {padding: 3px 4px 4px 2px;}
+.ListTools {text-align: right;}
+.ListTitle {font-weight: bold;}
+.ListTools a:link, .ListTools a:visited, .ListTitle a:link, .ListTitle a:visited {text-decoration:none;}
+.ListTools a:hover, .ListTools a:active, .ListTitle a:hover, .ListTitle a:active {text-decoration:underline;}
+.Listview .IconStar	{width:11px;height:12px;padding: 0;display: block;float:left;}
+
+/*Search Panel layout*/
+.SearchSpace {padding: 6px;width: 160px;}
+.SearchSpace p {padding:0 0 0.5em; margin:0; font-size:1em; line-height:1.1em;}
+.SearchSpace form {padding:0; margin:0;}
+.SearchSpace .SearchWidth {width: 156px;font: 11px Tahoma, Arial, Helvetica, sans-serif;margin: 3px 0px;padding: 0px;}
+.SearchSpace .tick {}
+.SearchSpace .SearchItem {margin: 10px 0 0;padding: 0;font-weight: bold;}
+.SearchSpace a:link, .SearchSpace a:visited {text-decoration:none;}
+.SearchSpace a:hover, .SearchSpace a:active {text-decoration:underline;}
+
+
+.ListDropdown {width: 115px;font: 10px Tahoma, Arial, Helvetica, sans-serif;margin: -5px 0px;padding: 0px;}
+
+/*Forms*/
+#CentralSpaceLogin form {margin:0;padding:0;}
+.Question{padding: 0.5em 0em 1em;}
+.QuestionSubmit{	padding: 0.75em 0em 1em;margin-top: 1em;}
+.Question label, .QuestionSubmit label{	width: 150px;float: left;margin-top: 0.4em;}
+.Question .Lineup {margin: 3px 0px;}
+.Question .stdwidth,.stdwidth{width: 360px;font: 11px Tahoma, Arial, Helvetica, sans-serif;margin: 3px 0px;}
+.Question .medwidth,.medwidth{width: 250px;font: 11px Tahoma, Arial, Helvetica, sans-serif;margin: 3px 0px;}
+.Question .shrtwidth,.shrtwidth{width: 145px;font: 11px Tahoma, Arial, Helvetica, sans-serif;margin: 3px 0px;}
+.Question .vshrtwidth{width: 93px;font: 11px Tahoma, Arial, Helvetica, sans-serif;margin: 3px 0px;}
+.Question .medcomplementwidth{width: 102px;font: 11px Tahoma, Arial, Helvetica, sans-serif;margin: 3px 0px;}
+.Question .Inline {float: left;margin: 3px 10px 0px 0px;}
+.Question .tickset {float: left;}
+.Question .OptionTable, .Question .OptionToggle {margin: 0 0 0 150px;padding:0;}
+
+
+.Question .Fixed {    width: 300px;float: left;margin-top: 0.4em;font-weight: bold;} 
+.FormError{font-weight: bold;font-size: 1.1em;margin: 0px 0px 10px 150px;padding: 10px 0px 0px;}
+.FormIncorrect {font-weight: bold;font-size: 1.1em;margin: 0px 0px 25px;text-align: center;padding: 3px 3px 6px;}
+.PageInformal {font-weight: bold;font-size: 1.1em;margin: 0px 0px 25px;text-align: center;padding: 3px 3px 6px;}
+.xAutoSaveStatus {font-weight: bold;margin: 0px 0px 10px 150px;padding-top: 4px;}
+.AutoSaveStatus {font-weight: bold;float:right;padding:6px 0 0;}
+
+/*Record Panel layout*/
+.RecordBox {margin: 20px 15px 15px 0px;}
+.RecordPanel {padding: 6px 6px 16px;}
+.RecordPanel .RecordHeader {}
+.RecordPanel h1 {}
+.backtoresults {float: right;margin: 0.4em 0 0 0.25em;} 
+
+.RecordPanel .RecordResouce {position:relative;clear: left;} 
+.RecordPanel .Picture {float: left;margin: 0px 10px 10px 0px;}
+.RecordPanel .PictureDoc {float: left;margin: 50px 130px;}
+
+.RecordPanel .Detail {float: left;}
+
+.RecordPanel form { margin:0; padding:0;}
+.RecordPanel .Title {padding:0.1em 0 0.5em;margin:0 0 10px;font: normal 1.5em Arial, Helvetica, sans-serif;clear: left;}
+
+.NoFind {font-size: 1.1em;margin: 50px 0px 25px;text-align: center;padding: 15px 3px 16px;}
+
+.RecordPanel .Col {float: left;width: 352px;margin-bottom: 10px;}
+.RecordPanel .ColNarrow {float: left;width: 171px;margin-bottom: 10px;}
+.RecordPanel .buffer {margin-right: 10px;}
+.RecordPanel .itemNarrow {float: left;width: 170px;margin-bottom: 10px;margin-right: 5px;position:relative;} 
+.RecordPanel .SearchSimilar {float: left;width: 120px;margin: 0px 10px 2px 0px;padding: 0px;}
+.RecordPanel .item {float: left;margin-bottom: 10px;width: 100%;position:relative;}
+.RecordPanel .item h3, .RecordPanel .itemNarrow h3 {font-size: 1em;margin: 0px;padding: 0px;}
+.RecordPanel .item p, .RecordPanel .itemNarrow p {margin: 0px;padding: 0px;}
+.RecordPanel .RecordDownload {float: left;width: 352px;margin: 0px 0px 10px;}
+.RecordPanel .RecordDownload table {width: 340px;margin: 0px;padding: 0px;}
+.RecordPanel .RecordDownload td {padding: 5px;margin: 0;}
+.RecordPanel .RecordDownload .DownloadDBlend td {margin: 0;vertical-align: middle;}
+.RecordPanel .RecordDownloadSpace {padding: 6px;}
+.RecordPanel .RecordDownloadSpace ul {padding:0.2em 0;margin:0;list-style:none;}
+.RecordPanel .RecordDownloadSpace li {padding:0;margin:0 8px 1px 0;float:left;}
+.RecordPanel .RecordDownloadSpace .DownloadDBlend .DownloadButton {text-align: center;font-weight: bold;}
+.RecordPanel .RecordDownloadSpace .DownloadDBlend h2 {margin:0;padding:0;font-size: 1em;	text-align: left;}
+.RecordPanel .RecordDownloadSpace .DownloadDBlend p {margin:0;padding:0;	text-align: left;}
+.RecordStory{padding: 6px;}
+.RecordStory h1{font-size:1.25em; padding:0.5em 0 0.5em 0; margin:0;font-weight:bold;}
+
+.RecordPanel h2{font-size:1.25em; padding:0; margin:0.5em 0 0.5em 0;font-weight:bold;}
+.RecordPanel p{padding:0; margin:0.5em 0 0.5em 0;}
+
+
+/* Basic page */
+.BasicsBox {margin:20px 15px 15px 0px;}
+.BasicsBox h1 {padding: 0px 0px 0.5em;}
+.BasicsBox h2 {font-size: 1.2em;margin-bottom: 4px;}
+.BasicsBox .HorizontalNav ul {padding:0.2em 0;margin:0 0 1.5em;list-style:none;}
+.BasicsBox .HorizontalNav li {display:inline;padding:0em 1em 0em 0em;margin:0em 0.5em 0em 0em;}
+.BasicsBox .VerticalNav ul {padding:0.2em 0;margin:0 0 1.5em;list-style:none;}
+.BasicsBox .VerticalNav li {padding:0 0.35em 0 0em;margin:0px 0.5em 1em 0px;}
+
+/* Themes */
+.ThemeBox {float: left;width: 250px;margin: 0px 15px 15px 0px;padding: 0px;}
+.ThemeBox ul {padding:0.2em 0;margin:0 0 0.5em;list-style:none;}
+.ThemeBox li {padding:0 0.35em 0 0em;margin:0px 0.5em 0.25em 0.25em;}
+
+/*Home styling */
+.HomePanel {margin:0px 15px 15px 0px;width: 163px;float: left;} 
+.HomePanelIN {padding: 6px;min-height: 90px;}
+.HomePanel h2 {font-size: 1.75em;padding-left: 14px;display:block;margin: 5px 0px;}
+.HomePanel p {margin: 0; padding: 5px 0 4px 0;}
+.HomePicturePanel {    margin:0px 15px 10px 0px;float: left;width: 519px;}
+.HomePicturePanelIN img {width:517px; height:350px;}
+.HomePicturePanelIN {height: 350px;}
+
+.TabBar {padding:10px 0 0 0;}
+.Tab a {margin:0 5px 0 0;padding:2px 5px 0 5px;}
+.Tab a:hover {text-decoration: none;}
+.Tab {display:inline;}
+.StyledTabbedPanel {padding:10px 5px 5px 5px;clear:left;}
+.TabSelected a {padding-bottom: 1px;}
+
+.infotable {border-top: 1px solid #999999;}
+.infotable td,.infotable th {border-bottom: 1px solid #999999;}
+
+.RecordStory .highlight {background-color:black;padding:2px;}
+
+#InfoBox {display:none;position:absolute;top:0px;left:0px;width:362px;height:303px;background-repeat:no-repeat;
+behavior: url('../css/iepngfix.htc');
+}
+#InfoBoxInner {color:black;margin:15px 32px 15px 18px;height:210px;overflow:hidden;}
+#InfoBoxInner h2 {color:black;font-size:1.2em;font-weight:bold;}
+#InfoBoxInner p {color:black;padding:0;margin:0 0 5px 0;}
+
+#InfoBoxCollection {display:none;position:absolute;top:0px;left:0px;width:376px;height:112px;background-repeat:no-repeat;
+behavior: url('../css/iepngfix.htc');
+}
+#InfoBoxCollectionInner {color:black;margin:6px 32px 10px 20px;height:90px;overflow:hidden;}
+#InfoBoxCollectionInner h2 {color:black;font-size:1.2em;font-weight:bold;text-align:left;}
+#InfoBoxCollectionInner p {color:black;padding:0;margin:0 0 5px 0;text-align:left;}
+
+
+/* Use different icons for the collections bar */
+.CollectionPanelInfo .IconReorder	{	background: url(../gfx/interface/IcReorder.gif) no-repeat;}
+.CollectionPanelInfo .IconComment	{	background: url(../gfx/interface/IcComment.gif) no-repeat;}
+.CollectionPanelInfo .IconCommentAnim	{	background: url(../gfx/interface/IcComment_anim.gif) no-repeat;}
+.CollectionPanelInfo .IconRemove	{	background: url(../gfx/interface/IcRemove.gif) no-repeat;}
+
+.PDFnav {font-size: 4em; padding:6px;font-weight:bold;}
+.PDFnav:hover {text-decoration: none;}
+
+.NewFlag {display:inline;font-size:9px;margin-left:5px;padding:1px 3px 1px 3px;}
+.Breadcrumbs {float:left;margin-top:4px;}
+
+.CategoryBox {border:1px solid black;background-color:#ffffff;overflow:auto;width:550px;height:80px;padding:2px;font-size:12px;color: black;font-weight: normal;}
+.MiniCategoryBox {border:1px solid black;background-color:#ffffff;overflow:auto;width:152px;height:80px;padding:2px;font-size:12px;color: black;font-weight: normal;}
+
+.CategoryTree {border-top:1px solid black;border-left:1px solid black;border-bottom:2px solid black;border-right:2px solid black;background-color:white;overflow:auto;width:550px;height:400px;display:none;color: black;font-weight: normal;}
+
+
+.URLDisplay {width: 500px;font: 11px Tahoma, Arial, Helvetica, sans-serif;}
+
+#CollectionFramelessNav ul {padding:0.4em 0;margin:0;list-style:none;}
+#CollectionFramelessNav li {padding:0;margin:0px 8px 1px 0px;float:left;white-space:nowrap;}
+
+#CollectionFramelessDropTitle {padding-top:5px;}
+#CollectionFramelessDrop {padding:0;}
+
+
+/* Autocomplete dropdown CSS - colours can be overridden in the colour CSS files */
+div.autocomplete {
+  position:absolute;
+  width:250px;
+  background-color:white;
+  border:1px solid #888;
+  margin:0px;
+  padding:0px;
+}
+div.autocomplete ul {
+  list-style-type:none;
+  margin:0px;
+  padding:0px;
+}
+div.autocomplete ul li.selected { background-color: #ffb;}
+div.autocomplete ul li {
+  list-style-type:none;
+  display:block;
+  margin:0;
+  padding:2px;
+  cursor:pointer;
+  color: #000;
+}
+
+/* CSS for the user ratings */
+.StarSelect {background: transparent url('../gfx/interface/RatingStarRed.gif') no-repeat;}
+.StarWhite {background: transparent url('../gfx/interface/RatingStarWhite.gif') no-repeat;;}
+.StarGrey {background: transparent url('../gfx/interface/RatingStarGrey.gif') no-repeat;;}
+.RatingCount {font-size:11px;}
+.RatingStars a:hover {text-decoration:none;}
+.RatingStars {text-align:center;margin-bottom:5px;margin-top:5px;}
+.Listview .ListViewSubTable,.Listview .ListViewSubTable td,.Listview .ListViewSubTable tr {background-image: none;}
+.StarEmpty {  background: transparent url('../gfx/interface/RatingStarGrey.gif') no-repeat;}
+.StarCurrent { background: transparent url('../gfx/interface/RatingStarWhite.gif') no-repeat;}
+
+
+/* CSS for the lightbox (for resource feedback) */
+#lightbox{	position: absolute;	left: 0; width: 100%; z-index: 100; text-align: center; line-height: 0;}
+#lightbox img{ width: auto; height: auto;}
+#lightbox a img{ border: none; }
+
+#outerImageContainer{ position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; }
+#imageContainer{ padding: 10px; }
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#hoverNav{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{ width: 49%; height: 100%; background-image: url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */ display: block; }
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(../gfx/lightbox/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(../gfx/lightbox/nextlabel.gif) right 15% no-repeat; }
+
+#imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em; outline: none;}	 	
+
+#overlay{ position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; background-color: #000; }
+
+.FormHelp{margin: 0px 0px 10px 150px;padding: 0;}
+.FormHelpInner{background-color:#ffffff;border:1px solid #000000;    border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;width:360px;padding:5px;margin:10px 0 0 0;color:black;}
+
+#ThemeBox {padding:0;margin:0;text-align:left;width: 170px;}
+#ThemeBoxPanel {width: 170px;padding:0;margin:0;}
+
+.DownloadDisabled {font-weight: normal;}
+
+.AltThumb {float:left;padding-right:5px;}
+
+/* single file upload progress bar */
+.meter-wrap{position: relative;width:290px;border:1px solid #fff;}
+.meter-value {height: 10px;}
+
+.SearchOptionNav {padding-bottom:0;margin-bottom:5px;margin-right:20px;float:left;}
+.dynamickeywords {float:left;}
+.keywordsselected {margin-top:10px;}
+
+#ThemeBoxPanel, #SearchBoxPanel, #ResearchBoxPanel, .HomePanelIN, .RecordPanel .RecordDownload, .RecordPanel, .ResourcePanel, .ResourcePanelSmall, .ResourcePanelLarge
+	{
+	border-radius:10px;	-moz-border-radius: 10px; -webkit-border-radius: 10px;
+
+    -webkit-box-shadow: 4px 5px 5px rgba(0, 0, 0, .18);
+    -moz-box-shadow: 4px 5px 5px rgba(0, 0, 0, .18);
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, .18);
+	}
+
+.TabSelected a 
+        {       
+        border-top-right-radius:5px;border-top-left-radius:5px; 
+        -moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px; 
+        -webkit-border-top-left-radius: 5px;-webkit-border-top-right-radius: 5px;
+        }
+        
+.Tab a 
+        {       
+        border-top-right-radius:5px;border-top-left-radius:5px; 
+        -moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px; 
+        -webkit-border-top-left-radius: 5px;-webkit-border-top-right-radius: 5px;
+        }
+        
+.StyledTabbedPanel 
+        {       
+        border-bottom-right-radius:10px;border-bottom-left-radius:10px; border-top-right-radius:10px;
+        -moz-border-radius-bottomleft: 10px;-moz-border-radius-bottomright: 10px; -moz-border-radius-topright: 10px; 
+        -webkit-border-bottom-left-radius: 10px;-webkit-border-bottom-right-radius: 10px;-moz-border-radius-topright: 10px; 
+        }
+
+.xlargesearchimage {max-height:350px;max-width:350px;}
